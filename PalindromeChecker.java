@@ -5,10 +5,10 @@ public class PalindromeChecker {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a string: ");
-        String input = scanner.nextLine();
+        String userInput = scanner.nextLine();
 
-        // Transform the input string
-        String transformed = transformInput(input);
+        // Transform the userInput string
+        String transformed = transformInput(userInput);
 
         // Check if the transformed string is a palindrome
         boolean isPalindrome = checkPalindrome(transformed);
@@ -26,11 +26,11 @@ public class PalindromeChecker {
      * @param input the original input string
      * @return the transformed string
      */
-    public static String transformInput(String input) {
-        input = input.toLowerCase();
-        input = input.replace(",", "");
-        input = input.replace(" ", "");
-        return input;
+    public static String transformInput(String userInput) {
+        userInput = userInput.toLowerCase();
+        userInput = userInput.replace(",", "");
+        userInput = userInput.replace(" ", "");
+        return userInput;
     }
 
     /**
