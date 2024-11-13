@@ -5,10 +5,10 @@ public class PalindromeChecker {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a string: ");
-        String input = scanner.nextLine();
+        String string = scanner.nextLine();
 
         // Transform the input string
-        String transformed = transformInput(input);
+        String transformed = transformInput(string);
 
         // Check if the transformed string is a palindrome
         boolean isPalindrome = checkPalindrome(transformed);
